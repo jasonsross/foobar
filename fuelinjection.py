@@ -4,7 +4,6 @@ Created on Fri Aug 04 11:38:55 2017
 
 @author: jasonros
 """
-
 def answer(n):
     from collections import deque
     
