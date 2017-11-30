@@ -5,35 +5,28 @@ Created on Fri Aug 04 11:38:55 2017
 @author: jasonros
 """
 def answer(n):
-    from collections import deque
-    
+    from collections import deque    
     class Node:
-
         def __init__(self, value,down,up):
             self.value = value
             self.down = down
-            self.up = up
-    
+            self.up = up    
         def __hash__(self):
-            return self.value
-    
+            return self.value    
         def __eq__(self, other):
-            return self.value == other.value
-    
+            return self.value == other.value    
         def get_neighbors(self):
             neighbors = []
             value = self.value
             up = self.up
-            down = self.down
-            
+            down = self.down            
             if not (value % 2):
                 neighbors.append(Node(value >> 1,1,1))
             else:
                 if up:
                     neighbors.append(Node(value+1,0,1))
                 if down:
-                    neighbors.append(Node(value-1,1,0))
-            
+                    neighbors.append(Node(value-1,1,0))            
             return neighbors    
     if int(n) == 0:
         return 1
