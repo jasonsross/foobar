@@ -44,7 +44,6 @@ def answer(n):
                     return step_map[child_node.value]
                 else:
                     queue.append(child_node)
-
 print(answer("9"*309))
 
 #python -m cProfile fuelinjection.py
