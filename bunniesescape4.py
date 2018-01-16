@@ -5,6 +5,7 @@ Created on Thu Aug 03 20:08:54 2017
 @author: jasonros
 """
 
+import pandas as pd
 
 def answer(maze):
     from collections import deque
